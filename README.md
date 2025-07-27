@@ -207,3 +207,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - [Sanity Documentation](https://www.sanity.io/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Vercel Documentation](https://vercel.com/docs)
+# sanity-starter
