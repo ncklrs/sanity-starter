@@ -1,15 +1,27 @@
-import { createClient } from 'next-sanity'
-import imageUrlBuilder from '@sanity/image-url'
+// Re-export from modular structure
+export { client, previewClient } from './sanity/client'
+export { urlFor } from './sanity/image'
 
-export const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-  apiVersion: '2024-01-01',
-  useCdn: process.env.NODE_ENV === 'production',
-})
+// Export API configuration
+export { projectId, dataset, apiVersion, revalidateSecret, studioUrl } from './sanity/api'
 
-const builder = imageUrlBuilder(client)
+// Export utilities (excluding duplicates)
+export * from './sanity/token'
 
-export function urlFor(source: any) {
-  return builder.image(source)
-} 
+// Export utils with specific exports to avoid conflicts
+export {
+  formatDate,
+  truncateText,
+  getReadingTime,
+  slugify,
+  getImageAlt,
+  getImageCaption,
+  generateMetaTitle,
+  generateMetaDescription,
+  isValidSlug,
+  sanitizeHtml,
+  chunkArray,
+  uniqueArray,
+  pick,
+  omit
+} from './sanity/utils' 

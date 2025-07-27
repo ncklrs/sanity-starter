@@ -5,6 +5,7 @@ import { postBySlugQuery } from '@/lib/queries'
 import { generatePostMetadata } from '@/lib/seo'
 import { LLMMetadataDisplay } from '@/lib/llm-metadata'
 import { PortableText } from '@/lib/portable-text'
+import { getPostBySlug } from '@/lib/sanity/data'
 
 interface Post {
   title: string
@@ -62,7 +63,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const slug = params.slug.join('/')
-  const post = await client.fetch<Post>(postBySlugQuery, { slug })
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     return {
@@ -71,12 +72,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
-  return generatePostMetadata(post, slug)
+  return generatePostMetadata(post as any, slug)
 }
 
 export default async function BlogPost({ params }: PageProps) {
   const slug = params.slug.join('/')
-  const post = await client.fetch<Post>(postBySlugQuery, { slug })
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     notFound()

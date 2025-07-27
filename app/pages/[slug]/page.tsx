@@ -1,10 +1,13 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { client } from '@/lib/sanity'
+import { client, previewClient } from '@/lib/sanity'
 import { pageBySlugQuery } from '@/lib/queries'
 import { generatePageMetadata } from '@/lib/seo'
 import { LLMMetadataDisplay } from '@/lib/llm-metadata'
 import { ModuleRenderer } from '@/components/modules/ModuleRenderer'
+import { PreviewProvider } from '@/components/preview/PreviewProvider'
+import { DraftOverlay } from '@/components/preview/DraftOverlay'
+import { getPageBySlug } from '@/lib/sanity/data'
 
 interface Page {
   _id: string
@@ -19,6 +22,7 @@ interface Page {
 
 interface PageProps {
   params: { slug: string[] }
+  searchParams: { preview?: string }
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -34,16 +38,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return generatePageMetadata(page)
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params, searchParams }: PageProps) {
   const slug = params.slug.join('/')
-  const page = await client.fetch<Page>(pageBySlugQuery, { slug })
+  const isPreview = searchParams.preview === 'true'
+  
+  let page: Page | null = null
+  
+  if (isPreview) {
+    // Use preview client for draft content
+    page = await previewClient.fetch<Page>(pageBySlugQuery, { slug })
+  } else {
+    // Use tagged data fetching for production
+    page = await getPageBySlug(slug)
+  }
 
-  if (!page || page.status !== 'published') {
+  if (!page) {
     notFound()
   }
 
-  return (
+  // In preview mode, allow draft content; otherwise only published
+  if (!isPreview && page.status !== 'published') {
+    notFound()
+  }
+
+  const content = (
     <div className="min-h-screen">
+      {/* Draft Overlay */}
+      {isPreview && <DraftOverlay />}
+      
       {/* LLM Metadata Display */}
       {page.llmMetadata && (
         <div className="bg-gray-50 border-b">
@@ -69,4 +91,15 @@ export default async function Page({ params }: PageProps) {
       </main>
     </div>
   )
+
+  // Wrap in PreviewProvider if in preview mode
+  if (isPreview) {
+    return (
+      <PreviewProvider>
+        {content}
+      </PreviewProvider>
+    )
+  }
+
+  return content
 } 

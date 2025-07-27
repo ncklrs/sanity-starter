@@ -8,7 +8,7 @@ export default defineType({
     { name: 'content', title: 'Content', default: true },
     { name: 'seo', title: 'SEO' },
     { name: 'llm', title: 'LLM Metadata' },
-    { name: 'modules', title: 'Content Modules' },
+    // { name: 'modules', title: 'Content Modules' },
   ],
   fields: [
     // Content Group
@@ -80,7 +80,7 @@ export default defineType({
         { type: 'testimonialModule' },
         { type: 'faqModule' },
       ],
-      group: 'modules',
+      group: 'content',
     }),
   ],
   preview: {
