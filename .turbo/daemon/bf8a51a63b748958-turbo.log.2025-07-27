@@ -1,0 +1,70 @@
+2025-07-27T00:00:06.314691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/HeroModule.tsx")}
+2025-07-27T00:00:06.314703Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:06.414630Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/daemon/bf8a51a63b748958-turbo.log.2025-07-27"), AnchoredSystemPathBuf(".turbo/daemon/bf8a51a63b748958-turbo.log.2025-07-26")}
+2025-07-27T00:00:06.414645Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:07.613280Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/HeroModule.tsx")}
+2025-07-27T00:00:07.613290Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:16.014064Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("lib/sanity.ts")}
+2025-07-27T00:00:16.014076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:25.714064Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-27T00:00:25.714072Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-27T00:00:25.914085Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package-lock.json")}
+2025-07-27T00:00:25.914094Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:34.514738Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/TextModule.tsx")}
+2025-07-27T00:00:34.514752Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:35.814184Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/TextModule.tsx")}
+2025-07-27T00:00:35.814195Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:42.013892Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("lib/portable-text.tsx")}
+2025-07-27T00:00:42.013902Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:45.913614Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("lib/portable-text.tsx")}
+2025-07-27T00:00:45.913623Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:54.413833Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/ImageModule.tsx")}
+2025-07-27T00:00:54.413842Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:00:55.814180Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/ImageModule.tsx")}
+2025-07-27T00:00:55.814193Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:04.214743Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/GalleryModule.tsx")}
+2025-07-27T00:01:04.214753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:05.714032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/GalleryModule.tsx")}
+2025-07-27T00:01:05.714044Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:14.813183Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/CTAModule.tsx")}
+2025-07-27T00:01:14.813193Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:16.114411Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/CTAModule.tsx")}
+2025-07-27T00:01:16.114441Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:27.413843Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/TestimonialModule.tsx")}
+2025-07-27T00:01:27.413853Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:28.713956Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/TestimonialModule.tsx")}
+2025-07-27T00:01:28.713975Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:40.413089Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/FAQModule.tsx")}
+2025-07-27T00:01:40.413098Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:41.814537Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("components/modules/FAQModule.tsx")}
+2025-07-27T00:01:41.814547Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:01:50.714610Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("IMPLEMENTATION_PLAN.md")}
+2025-07-27T00:01:50.714618Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:06:30.413758Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("studio/sanity.config.ts")}
+2025-07-27T00:06:30.413773Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("studio"), path: AnchoredSystemPathBuf("studio") }}))
+2025-07-27T00:06:37.513110Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("next.config.js")}
+2025-07-27T00:06:37.513147Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:06:54.013055Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-27T00:06:54.013076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-27T00:07:03.114494Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("studio/package.json")}
+2025-07-27T00:07:03.114506Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("studio"), path: AnchoredSystemPathBuf("studio") }}))
+2025-07-27T00:07:15.612580Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts"), AnchoredSystemPathBuf("scripts/dev.js")}
+2025-07-27T00:07:15.612591Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:07:17.013399Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/dev.js")}
+2025-07-27T00:07:17.013428Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:07:22.513454Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/dev.js")}
+2025-07-27T00:07:22.513463Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:07:25.613306Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-27T00:07:25.613316Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-27T00:07:33.814798Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("next.config.js")}
+2025-07-27T00:07:33.814809Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:07:42.813443Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/dev.js")}
+2025-07-27T00:07:42.813452Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:07:54.414415Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/40.cookie")}
+2025-07-27T00:07:54.414456Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:08:16.614758Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("IMPLEMENTATION_PLAN.md")}
+2025-07-27T00:08:16.614780Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:12:49.413002Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("SANITY_V4_UPGRADE_PLAN.md")}
+2025-07-27T00:12:49.413012Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-27T00:12:51.113218Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("SANITY_V4_UPGRADE_PLAN.md")}
+2025-07-27T00:12:51.113227Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

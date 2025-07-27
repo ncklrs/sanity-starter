@@ -6,8 +6,6 @@ node_modules/
 # Production builds
 dist/
 build/
-.next/
-out/
 
 # Environment variables
 .env
@@ -31,15 +29,4 @@ out/
 Thumbs.db
 
 # Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
-
-# Testing
-coverage/
-.nyc_output/
-
-# Misc
-.cache/
-.temp/
+.vercel 

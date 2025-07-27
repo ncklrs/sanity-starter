@@ -1,18 +1,77 @@
 {
-  "name": "my-sanity-template",
-  "scripts": {
-    "dev": "npm-run-all --parallel dev:*",
-    "dev:frontend": "cd frontend && npm run dev",
-    "dev:studio": "cd studio && npm run dev",
-    "deploy:studio": "cd studio && sanity deploy",
-    "validate": "sanity-template-validate"
-  },
+  "name": "sanity-llm-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanity LLM project with self-hosted studio and Next.js frontend",
   "workspaces": [
-    "frontend",
     "studio"
   ],
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:concurrent": "concurrently \"npm run dev:frontend\" \"npm run dev:studio\"",
+    "dev:frontend": "next dev -p 3000",
+    "dev:frontend:alt": "next dev -p 3001",
+    "dev:studio": "turbo run dev --filter=studio",
+    "start": "npm run dev",
+    "build": "concurrently \"npm run build:frontend\" \"npm run build:studio\"",
+    "build:frontend": "next build",
+    "build:studio": "turbo run build --filter=studio",
+    "start:frontend": "next start -p 3000",
+    "start:frontend:alt": "next start -p 3001",
+    "start:studio": "turbo run start --filter=studio",
+    "lint": "concurrently \"npm run lint:frontend\" \"npm run lint:studio\"",
+    "lint:frontend": "next lint",
+    "lint:studio": "turbo run lint --filter=studio",
+    "lint:fix": "concurrently \"npm run lint:fix:frontend\" \"npm run lint:fix:studio\"",
+    "lint:fix:frontend": "next lint --fix",
+    "lint:fix:studio": "turbo run lint:fix --filter=studio",
+    "type-check": "concurrently \"npm run type-check:frontend\" \"npm run type-check:studio\"",
+    "type-check:frontend": "tsc --noEmit",
+    "type-check:studio": "turbo run type-check --filter=studio",
+    "clean": "concurrently \"npm run clean:frontend\" \"npm run clean:studio\"",
+    "clean:frontend": "rm -rf .next out dist",
+    "clean:studio": "turbo run clean --filter=studio",
+    "install:all": "npm install && npm run install:studio",
+    "install:studio": "npm install --workspace=studio",
+    "deploy:studio": "npm run build:studio && vercel --prod studio",
+    "deploy:frontend": "npm run build:frontend && vercel --prod .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "kill-ports": "lsof -ti:3000,3001,3333 | xargs kill -9 2>/dev/null || true"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.0.11",
+    "@sanity/image-url": "^1.1.0",
+    "autoprefixer": "^10.4.21",
+    "groq": "^3.14.0",
+    "next": "^14.1.0",
+    "next-sanity": "^7.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^19.1.0"
+  },
   "devDependencies": {
-    "@sanity/template-validator": "^2",
-    "npm-run-all": "^4.1.5"
-  }
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.0.2",
+    "tailwindcss": "^3.4.0",
+    "turbo": "^1.12.4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "sanity",
+    "nextjs",
+    "typescript",
+    "monorepo",
+    "cms",
+    "llm"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
